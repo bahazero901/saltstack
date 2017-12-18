@@ -3,7 +3,3 @@ basic_apps:
     - pkgs:
       - wget
       - net-tools
-
-synchronize-files:
-  rsync.synchronized:
-    - source: /files

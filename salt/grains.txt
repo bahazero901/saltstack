@@ -1,0 +1,270 @@
+test-server:
+    ----------
+    SSDs:
+    biosreleasedate:
+        12/01/2006
+    biosversion:
+        VirtualBox
+    cpu_flags:
+        - fpu
+        - vme
+        - de
+        - pse
+        - tsc
+        - msr
+        - pae
+        - mce
+        - cx8
+        - apic
+        - sep
+        - mtrr
+        - pge
+        - mca
+        - cmov
+        - pat
+        - pse36
+        - clflush
+        - mmx
+        - fxsr
+        - sse
+        - sse2
+        - syscall
+        - nx
+        - rdtscp
+        - lm
+        - constant_tsc
+        - rep_good
+        - nopl
+        - xtopology
+        - nonstop_tsc
+        - pni
+        - pclmulqdq
+        - monitor
+        - ssse3
+        - cx16
+        - sse4_1
+        - sse4_2
+        - x2apic
+        - movbe
+        - popcnt
+        - aes
+        - xsave
+        - avx
+        - rdrand
+        - hypervisor
+        - lahf_lm
+        - abm
+        - 3dnowprefetch
+        - rdseed
+        - clflushopt
+    cpu_model:
+        Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+    cpuarch:
+        x86_64
+    disks:
+        - sda
+        - dm-0
+        - dm-1
+        - dm-2
+        - loop0
+        - loop1
+    dns:
+        ----------
+        domain:
+        ip4_nameservers:
+            - 10.0.2.3
+        ip6_nameservers:
+        nameservers:
+            - 10.0.2.3
+        options:
+        search:
+        sortlist:
+    domain:
+    fqdn:
+        test-server
+    fqdn_ip4:
+        - 192.168.100.217
+        - 172.17.0.1
+        - 10.0.2.15
+    fqdn_ip6:
+        - fe80::a00:27ff:fe6a:d9d4
+    gid:
+        0
+    gpus:
+        |_
+          ----------
+          model:
+              VirtualBox Graphics Adapter
+          vendor:
+              unknown
+    groupname:
+        root
+    host:
+        test-server
+    hwaddr_interfaces:
+        ----------
+        docker0:
+            02:42:29:45:90:3a
+        eth0:
+            52:54:00:47:46:52
+        eth1:
+            08:00:27:6a:d9:d4
+        lo:
+            00:00:00:00:00:00
+    id:
+        test-server
+    init:
+        systemd
+    ip4_interfaces:
+        ----------
+        docker0:
+            - 172.17.0.1
+        eth0:
+            - 10.0.2.15
+        eth1:
+            - 192.168.100.217
+        lo:
+            - 127.0.0.1
+    ip6_interfaces:
+        ----------
+        docker0:
+        eth0:
+        eth1:
+            - fe80::a00:27ff:fe6a:d9d4
+        lo:
+            - ::1
+    ip_interfaces:
+        ----------
+        docker0:
+            - 172.17.0.1
+        eth0:
+            - 10.0.2.15
+        eth1:
+            - 192.168.100.217
+            - fe80::a00:27ff:fe6a:d9d4
+        lo:
+            - 127.0.0.1
+            - ::1
+    ipv4:
+        - 10.0.2.15
+        - 127.0.0.1
+        - 172.17.0.1
+        - 192.168.100.217
+    ipv6:
+        - ::1
+        - fe80::a00:27ff:fe6a:d9d4
+    kernel:
+        Linux
+    kernelrelease:
+        3.10.0-514.26.2.el7.x86_64
+    locale_info:
+        ----------
+        defaultencoding:
+            UTF-8
+        defaultlanguage:
+            en_US
+        detectedencoding:
+            UTF-8
+    localhost:
+        test-server
+    lsb_distrib_codename:
+        CentOS Linux 7 (Core)
+    lsb_distrib_id:
+        CentOS Linux
+    machine_id:
+        ba4ad8d8c1924585bee749cbb702c961
+    manufacturer:
+        innotek GmbH
+    master:
+        192.168.100.211
+    mdadm:
+    mem_total:
+        488
+    nodename:
+        test-server
+    num_cpus:
+        1
+    num_gpus:
+        1
+    os:
+        CentOS
+    os_family:
+        RedHat
+    osarch:
+        x86_64
+    oscodename:
+        CentOS Linux 7 (Core)
+    osfinger:
+        CentOS Linux-7
+    osfullname:
+        CentOS Linux
+    osmajorrelease:
+        7
+    osrelease:
+        7.3.1611
+    osrelease_info:
+        - 7
+        - 3
+        - 1611
+    path:
+        /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin:/sbin
+    pid:
+        966
+    productname:
+        VirtualBox
+    ps:
+        ps -efHww
+    pythonexecutable:
+        /usr/bin/python
+    pythonpath:
+        - /usr/bin
+        - /usr/lib64/python27.zip
+        - /usr/lib64/python2.7
+        - /usr/lib64/python2.7/plat-linux2
+        - /usr/lib64/python2.7/lib-tk
+        - /usr/lib64/python2.7/lib-old
+        - /usr/lib64/python2.7/lib-dynload
+        - /usr/lib64/python2.7/site-packages
+        - /usr/lib64/python2.7/site-packages/gtk-2.0
+        - /usr/lib/python2.7/site-packages
+    pythonversion:
+        - 2
+        - 7
+        - 5
+        - final
+        - 0
+    saltpath:
+        /usr/lib/python2.7/site-packages/salt
+    saltversion:
+        2017.7.2
+    saltversioninfo:
+        - 2017
+        - 7
+        - 2
+        - 0
+    selinux:
+        ----------
+        enabled:
+            True
+        enforced:
+            Enforcing
+    server_id:
+        1075702979
+    shell:
+        /bin/sh
+    systemd:
+        ----------
+        features:
+            +PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN
+        version:
+            219
+    uid:
+        0
+    username:
+        root
+    uuid:
+        ba4ad8d8-c192-4585-bee7-49cbb702c961
+    virtual:
+        VirtualBox
+    zmqversion:
+        4.1.4

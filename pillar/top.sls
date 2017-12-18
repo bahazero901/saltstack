@@ -1,6 +1,8 @@
 base:
   '*':
     - users
-#    - data
-#    - pkg
-#   - test.filename.sls
+    - data
+    - pkg
+#    - test
+  'centos*':
+    - mysql

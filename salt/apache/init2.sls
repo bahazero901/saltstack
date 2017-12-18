@@ -8,6 +8,7 @@ apache:
       - file: /etc/httpd/conf/httpd.conf
       - user: apache
   user.present:
+    - name: apache
     - uid: 87
     - gid: 87
     - home: /var/www/html
@@ -15,6 +16,7 @@ apache:
     - require:
       - group: apache
   group.present:
+    - name: apache
     - gid: 87
     - require:
       - pkg: apache
