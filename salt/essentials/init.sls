@@ -4,4 +4,3 @@ basic_apps:
       - wget: 2:7.4.160-1.el7
       - net-tools
       - tree
-   
