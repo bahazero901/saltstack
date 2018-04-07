@@ -4,6 +4,7 @@ base:
   "*":
     - essentials
     - docker
+    - etcd
   "centos*":
     - nginx
 # 'web* and G@wserv:nginx':

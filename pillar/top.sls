@@ -3,6 +3,6 @@ base:
     - users
     - data
     - pkg
-#    - test
+    - beacon
   'centos*':
     - mysql
