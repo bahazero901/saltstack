@@ -1,5 +1,5 @@
-- require:
-  - common.mysql
+require:
+  - mysql
 
 {% set root_pass = salt['pillar.get']('mysql:root_password') -%}
 
@@ -10,12 +10,13 @@ python-mysql:
     - require:
       - pkg: mysql-pkgs
 
-mariadb.running:
-  enable: True
-  - require:
-    - pkg: mysql-pkgs
-  - watch:
-    - file: /etc/my.cnf.d/openstack.cnf
+mariadb-services:
+  service.running:
+    enable: True
+    - require:
+      - pkg: mysql-pkgs
+    - watch:
+      - file: /etc/my.cnf.d/openstack.cnf
 
 /etc/my.cnf.d/openstack.cnf:
   file.managed:

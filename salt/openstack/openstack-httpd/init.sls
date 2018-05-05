@@ -1,16 +1,10 @@
 - include:
-  - common.httpd
+  - httpd
 
 mod_wsgi:
   pkg.installed:
     - require:
-      - pkg: httpd
-
-httpd:
-  service.running:
-    - enable: True
-    - watch:
-      - file: /etc/httpd/conf.d/
+      - pkg: httpd-pkgs
 
 httpd:
   service.running:
