@@ -3,6 +3,10 @@ base:
     - essentials
     - docker
     - ssh
+  "centos2"
+    - ceph.admin
+  "centos3"
+    - ceph.monitor
   "centos1*":
 #    - httpd
     - mysql

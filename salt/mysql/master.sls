@@ -1,3 +1,5 @@
+#https://www.tecmint.com/how-to-setup-mysql-master-slave-replication-in-rhel-centos-fedora/
+
 - include:
   - mysql
 
