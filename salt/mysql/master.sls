@@ -1,23 +1,15 @@
-#https://www.tecmint.com/how-to-setup-mysql-master-slave-replication-in-rhel-centos-fedora/
+#https://www.tecmint.com/mariadb-master-slave-replication-on-centos-rhel-debian/
 
 - include:
   - mysql
 
-create_database:
-  mysql_database:
-    - name: testdatabase
-    - require:
-      - pkg: mysql-pkgs
-      - pkg: python-mysql
-
 create_slave_user:
   mysql_user.present:
-    - name: slave_user
+    - name: slave
     - host: localhost
-    - password: 
+    - password: password
     - connection_user: root
     - connection_pass: password
     - connection_charset: utf8
     - require:
       - pkg: python-mysql
-      - mysql_database

@@ -1,0 +1,9 @@
+{{ grains['ipv4'][-1] }}
+
+I am running {{ grains['os'] }}  which is part of the {{ grains['os_family'] }}
+
+{% for i in grains['ipv4'] %}
+One of my ip is {{ i }}
+{%endfor%}
+
+Listing interfaces {{ grains['ip_interfaces']['eth1'][0] }}

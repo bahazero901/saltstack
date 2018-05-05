@@ -12,6 +12,7 @@ nginx-repository:
 nginx-pkg:
   pkg.installed:
     - name: nginx
+#    - version: 1:1.13.12-1.el7
 {% if grains['os_family'] == "RedHat" %}
   require:
     - pkgrepo.managed: nginx-repository

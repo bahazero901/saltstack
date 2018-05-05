@@ -1,12 +1,10 @@
 [mysqld]
 datadir=/var/lib/mysql
 socket=/var/lib/mysql/mysql.sock
-
-log-bin
-server_id=1
-replicate-to-do={{ database_name }}
-bind-address={{ grains['ip4_interfaces:eth1'] }}
 # Disabling symbolic-links is recommended to prevent assorted security risks
+server_id=2
+replicate-do-db=employees
+
 symbolic-links=0
 # Settings user and group are ignored when systemd is used.
 # If you need to run mysqld under a different user or group,
@@ -21,3 +19,4 @@ pid-file=/var/run/mariadb/mariadb.pid
 # include all files from the config directory
 #
 !includedir /etc/my.cnf.d
+

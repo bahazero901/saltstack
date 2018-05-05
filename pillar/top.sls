@@ -1,8 +1,9 @@
 base:
   '*':
-    - users
-    - data
-    - pkg
-    - beacon
-  'centos*':
-    - mysql
+    - test
+#    - users
+#    - data
+#    - pkg
+#    - beacon
+#  'centos*':
+#    - mysql
