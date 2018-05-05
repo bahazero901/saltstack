@@ -1,20 +1,24 @@
-mysql-pkg:
+mysql-pkgs:
   pkg.installed:
-    - name: mysql-community-server
-  require:
-    - pkgrepo.managed: mysql_repository
+    - name: mariadb-server
 
 mysql-start-service:
   service.running:
-    - name: mysqld
+    - name: mariadb
     - enable: True
   require:
-    - pkg: mysql-pkg
+    - pkg: mysql-pkgs
 
-mysql_repository:
-  pkgrepo.managed:
-    - humanname: MySQL 5.6
-    - baseurl: http://repo.mysql.com/yum/mysql-5.6-community/el/7/$basearch/
-    - enabled: True
-    - gpgcheck: False
-  
+mysql-python:
+  pkg.installed:
+    - name: MySQL-python
+    - require:
+      - pkg: mysql-pkgs
+
+create_root_user:
+  mysql_user.present:
+    - name: root
+    - password: password
+    - host: localhost
+    - require:
+      - pkg: mysql-python
