@@ -1,6 +1,7 @@
 basic_apps:
   pkg.installed:
     - pkgs:
-      - wget: 2:7.4.160-1.el7
+      - wget #: 1.14-15
       - net-tools
       - tree
+      - vim-enhanced #: 2:7.4.160-2

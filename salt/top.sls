@@ -2,13 +2,9 @@ base:
   "*":
     - essentials
     - docker
-    - etcd
   "mysql*":
     - mysql
-  "*":
-    - essentials
-    - docker
-  "centos*":
-    - nginx
+  "centos4":
+    - httpd
 # 'web* and G@wserv:nginx':
 #    - match: compound    #need to specify the kind of matching

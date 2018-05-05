@@ -2,11 +2,9 @@ docker-client:
   pkg.installed:
 {% if grains['os_family'] == 'RedHat' %}
     - name: docker
-    - version: 1.12.6
 {% endif %}
 {% if grains['os_family'] == 'Debian' %}
     - name: docker.io
-    - version: 1.12.6
 {% endif %}
 
 docker-start-service:

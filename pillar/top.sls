@@ -4,6 +4,5 @@ base:
     - data
     - pkg
     - beacon
-    - test
   'centos*':
     - mysql
