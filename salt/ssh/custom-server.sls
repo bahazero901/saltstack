@@ -1,5 +1,5 @@
 include:
-  - ssh.server  #includes ssh/server.sls
+  - ssh.server 
 
 extend:
   /etc/ssh/banner:
